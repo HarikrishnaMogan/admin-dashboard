@@ -17,6 +17,8 @@ import Login from "./components/Pages/login";
 import Register from "./components/Pages/Register";
 import Scrolltop from "./components/scrolltop";
 import Table from "./components/table";
+import React from "react";
+
 
 
 //conditionaly render the header,navbar,footer,scrolltop button
@@ -28,8 +30,11 @@ function ConditionalRoute({path,component:Component})
         ? <></> : <Component />);
     }} />
 }
-function App(props)
+class App extends React.Component
 {
+  
+    render()
+    {
     return(
         <>
         <BrowserRouter >
@@ -38,7 +43,7 @@ function App(props)
         
           <ConditionalRoute path="/" component={Navbar}/>
          
-         <div id="content-wrapper" class="d-flex flex-column">
+         <div id="content-wrapper" className="d-flex flex-column">
          <div id="content">
          <ConditionalRoute path="/" component={Header}/>
        
@@ -67,7 +72,9 @@ function App(props)
          <Route path="/register" component={Register} />
         
          </BrowserRouter>
+     
         </>
     );
+    }
 }
 export default  App;
