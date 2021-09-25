@@ -38,7 +38,7 @@ class App extends React.Component
     {
     return(
         <>
-        <BrowserRouter forceRefresh={true}>
+        <BrowserRouter>
         <div id="page-top">
         <div id="wrapper">
         
