@@ -1,5 +1,9 @@
+
+
+
 function Charts(props)
 {
+   
     console.log(props);
     return(
         <>

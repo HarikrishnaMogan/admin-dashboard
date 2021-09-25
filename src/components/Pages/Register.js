@@ -50,10 +50,10 @@ function Register()
                             Register Account
                         </Link>
                         <hr/>
-                        <Link to="/" className="btn btn-google btn-user btn-block">
+                        <Link to="/"  className="btn btn-google btn-user btn-block">
                             <i className="fab fa-google fa-fw"></i> Register with Google
                         </Link>
-                        <Link to="/" className="btn btn-facebook btn-user btn-block">
+                        <Link to="/"  className="btn btn-facebook btn-user btn-block">
                             <i className="fab fa-facebook-f fa-fw"></i> Register with Facebook
                         </Link>
                     </form>

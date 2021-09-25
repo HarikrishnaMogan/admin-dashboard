@@ -31,13 +31,14 @@ function ConditionalRoute({path,component:Component})
     }} />
 }
 class App extends React.Component
-{
-  
+{     
+    
+   
     render()
     {
     return(
         <>
-        <BrowserRouter >
+        <BrowserRouter forceRefresh={true}>
         <div id="page-top">
         <div id="wrapper">
         
@@ -46,7 +47,7 @@ class App extends React.Component
          <div id="content-wrapper" className="d-flex flex-column">
          <div id="content">
          <ConditionalRoute path="/" component={Header}/>
-       
+        
          <Route exact path="/" component={Home} />
          <Route path="/button" component={Button} />
          <Route path="/cards" component={Cards} />
@@ -57,7 +58,12 @@ class App extends React.Component
          <Route path="/404" component={Unavailable} />
          <Route path="/blank" component={Blank} />
          <Route path="/table" component={Table} />
-         <Route path="/charts" component={Charts}/>
+         
+        
+       
+        <Route exact path="/charts" component={Charts} />
+        
+       
     
       
          </div>
@@ -70,7 +76,7 @@ class App extends React.Component
          <Route path="/forgotpassword" component={Forgotpassword} />
          <Route path="/login" component={Login} />
          <Route path="/register" component={Register} />
-        
+         
          </BrowserRouter>
      
         </>

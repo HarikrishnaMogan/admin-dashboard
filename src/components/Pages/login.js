@@ -39,14 +39,14 @@ function Login()
                                             Me</label>
                                     </div>
                                 </div>
-                                <Link to="/" className="btn btn-primary btn-user btn-block">
+                                <Link to="/"  className="btn btn-primary btn-user btn-block">
                                     Login
                                 </Link>
                                 <hr/>
-                                <Link to="/" className="btn btn-google btn-user btn-block">
+                                <Link to="/"  className="btn btn-google btn-user btn-block">
                                     <i className="fab fa-google fa-fw"></i> Login with Google
                                 </Link>
-                                <Link to="/" className="btn btn-facebook btn-user btn-block">
+                                <Link to="/"  className="btn btn-facebook btn-user btn-block">
                                     <i className="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                 </Link>
                             </form>

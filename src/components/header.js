@@ -229,7 +229,7 @@ aria-hidden="true">
         <div className="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div className="modal-footer">
             <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <Link className="btn btn-primary"  to="/login">Logout</Link>
+            <Link className="btn btn-primary" to="/login">Logout</Link>
         </div>
     </div>
 </div>
